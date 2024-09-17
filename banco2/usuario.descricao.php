@@ -99,14 +99,17 @@
             border-radius: 5px;
             padding: 10px;
         }
+
+        #form{
+            position: absolute;
+            left: 40%;
+            top: 20%;
+        }
     </style>
 </head>
 <body>
 
 
-<form 
-
-<header>
 
 <nav>
     <ul>
@@ -119,11 +122,40 @@
 </header>
 
 
-<form action="formulario.php" method="POST">
-    <label for="nome">Palavra: </label>
-    <input type="text" name="nome">
-    <button type="submit">Cadastrar</button>
-    <button type="reset">Limpar</button>
-       
+
+
+
+
+
+
+
+
+
+
+
+<form id="form" action="inserir.php" method="post">  
+  Descrição do Produto:<input type="text" name="descricao"> <br>
+  Fabricante:<input type="text" name="fabricante"> <br>
+  Quantidade:<input type="text" name="qnt"> <br>
+  Preço de custo: <input type="decimal" name="preco_custo"> <br>
+  Preço de venda: <input type="decimal" name="preco_venda"> <br>   
+  <button type="submit">Enviar</button>
+  <button type="reset">Resetar</button>
+  
+
+  <br><br>
+  <br><br>
+ 
+</form>
+<form action="consulta.php" method="get">
+  <button type="submit">Consultar</button>
+</form>
+
+
+
+
+
+                
+
 </body>
 </html>
